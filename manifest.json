@@ -1,14 +1,21 @@
 {
   "name": "Reset Answers",
 
-  "description": "Resets checkboxes , radio button ,Input Text !",
+  "description": "Resets checkboxes, radio button, Input Text!",
   "version": "0.0.0.1",
   "manifest_version": 3,
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["storage", "activeTab", "scripting"],
+  "permissions": ["activeTab", "scripting"],
   "action": {},
+  
+  "commands": {
+    "_execute_action": {
+      "suggested_key": "Alt+C",
+      "description": "clears input fields"
+    }
+  },
 
   "icons": {
     "16": "/images/icon16.png",
